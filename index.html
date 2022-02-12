@@ -1,168 +1,67 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Signin Template · Bootstrap v5.1</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Ifood Shop</title>
-</head>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sign-in/">
 
-<body>
+    
 
-    <div class="header">
-        <h2>Ifood Shop</h2>
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+    
+<main class="form-signin">
+  <form>
+    <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+    <div class="form-floating">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Password</label>
     </div>
 
-    <div class="row">
-        <div class="column side" style="background-color:#aaa;">Column</div>
-        <div class="column middle" style="background-color:#bbb;">
-            <div class="testbox">
-                <form>
-                    <div class="banner">
-                        <h1>Hotel Reservation Form</h1>
-                    </div>
-                    <br />
-                    <fieldset>
-                        <legend>Reservation Details</legend>
-                        <div class="columns">
-                            <div class="item">
-                                <label for="fname">First Name<span>*</span></label>
-                                <input id="fname" type="text" name="fname" />
-                            </div>
-                            <div class="item">
-                                <label for="lname"> Last Name<span>*</span></label>
-                                <input id="lname" type="text" name="lname" />
-                            </div>
-                            <div class="item">
-                                <label for="address">Address<span>*</span></label>
-                                <input id="address" type="text" name="address" />
-                            </div>
-                            <div class="item">
-                                <label for="zip">Zip Code<span>*</span></label>
-                                <input id="zip" type="text" name="zip" required />
-                            </div>
-                            <div class="item">
-                                <label for="city">City<span>*</span></label>
-                                <input id="city" type="text" name="city" />
-                            </div>
-                            <div class="item">
-                                <label for="state">State<span>*</span></label>
-                                <input id="state" type="text" name="state" />
-                            </div>
-                            <div class="item">
-                                <label for="eaddress">Email Address<span>*</span></label>
-                                <input id="eaddress" type="text" name="eaddress" />
-                            </div>
-                            <div class="item">
-                                <label for="phone">Phone<span>*</span></label>
-                                <input id="phone" type="tel" name="phone" />
-                            </div>
-                    </fieldset>
-                    <br />
-                    <fieldset>
-                        <legend>Dates</legend>
-                        <div class="columns">
-                            <div class="item">
-                                <label for="checkindate">Check-in Date <span>*</span></label>
-                                <input id="checkindate" type="date" name="checkindate" />
-                                <i class="fas fa-calendar-alt"></i>
-                            </div>
-                            <div class="item">
-                                <label for="checkoutdate">Check-out Date <span>*</span></label>
-                                <input id="checkoutdate" type="date" name="checkoutdate" />
-                                <i class="fas fa-calendar-alt"></i>
-                            </div>
-                            <div class="item">
-                                <p>Check-in Time </p>
-                                <select>
-                                    <option value="" disabled selected>Select time</option>
-                                    <option value="1">Morning</option>
-                                    <option value="2">Afternoon</option>
-                                    <option value="3">Evening</option>
-                                </select>
-                            </div>
-                            <div class="item">
-                                <p>Check-out Time </p>
-                                <select>
-                                    <option value="4" disabled selected>Select time</option>
-                                    <option value="5">Morning</option>
-                                    <option value="6">Afternoon</option>
-                                    <option value="7">Evening</option>
-                                </select>
-                            </div>
-                            <div class="item">
-                                <p>How many adults are coming?</p>
-                                <select>
-                                    <option value="8" disabled selected>Number of adults</option>
-                                    <option value="9">1</option>
-                                    <option value="10">2</option>
-                                    <option value="11">3</option>
-                                    <option value="12">4</option>
-                                    <option value="13">5</option>
-                                </select>
-                            </div>
-                            <div class="item">
-                                <p>How many children are coming?</p>
-                                <select>
-                                    <option value="14" disabled selected>Number of children</option>
-                                    <option value="15">0</option>
-                                    <option value="16">1</option>
-                                    <option value="17">2</option>
-                                    <option value="18">3</option>
-                                    <option value="19">4</option>
-                                    <option value="19">5</option>
-                                </select>
-                            </div>
-                            <div class="item" style=width:100%>
-                                <label for="room">Number of rooms</label>
-                                <input id="room" type="number" name="room" />
-                            </div>
-                            <div class="item">
-                                <p>Room 1 type</p>
-                                <select>
-                                    <option value="20" selected></option>
-                                    <option value="21">Standard</option>
-                                    <option value="22">Deluxe</option>
-                                    <option value="23">Suite</option>
-                                </select>
-                            </div>
-                            <div class="item">
-                                <p>Room 2 type</p>
-                                <select>
-                                    <option value="24" selected></option>
-                                    <option value="25">Standard</option>
-                                    <option value="26">Deluxe</option>
-                                    <option value="27">Suite</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <label for="instruction">Special Instructions</label>
-                            <textarea id="instruction" rows="3"></textarea>
-                        </div>
-                    </fieldset>
-                    <div class="btn-block">
-                        <button type="submit" href="/">Submit</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="column side" style="background-color:#ccc;">Column</div>
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
     </div>
-
-    <div class="footer">
-        <p>@ Eduardo Martins 2022.</p>
-    </div>
-
-</body>
-
-</html>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+  </form>
+</main>
 
 
-
-
-</body>
-
+    
+  </body>
 </html>
